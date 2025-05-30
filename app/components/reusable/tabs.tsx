@@ -37,7 +37,7 @@ useEffect(() => {
   const activeRef = contentRefs.current[activeIndex];
   if (activeRef) {
     const height = activeRef.offsetHeight;
-    contentRefs.current.forEach((ref, index) => {
+    contentRefs.current.forEach((ref) => {
       if (ref) {
         ref.style.height = `${height}px`;
       }

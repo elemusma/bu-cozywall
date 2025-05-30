@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+// import { usePathname } from "next/navigation";
 import { useState } from "react";
 import ButtonSquare from "./buttons/btn-square";
 import { Company, Phone } from "@/app/components/globals";
@@ -13,7 +13,7 @@ import Logo from "@/app/components/logo";
 import SocialIcons from "@/app/components/socialIcons";
 
 const MobileMenuToggle = () => {
-  const pathname = usePathname(); // Get the current route
+  // const pathname = usePathname(); // Get the current route
   const [isModalOpen, setIsModalOpen] = useState(false);
   const handleToggle = () => {
     setIsModalOpen((prevState) => !prevState);

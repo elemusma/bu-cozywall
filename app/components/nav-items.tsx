@@ -4,7 +4,7 @@ import { useEffect, useRef } from "react";
 import "../styles/nav-items.scss";
 import "../styles/nav.scss";
 import Logo from "./logo";
-import { usePathname } from "next/navigation";
+// import { usePathname } from "next/navigation";
 import { Phone } from "@/app/components/globals";
 import ButtonSquare from "./buttons/btn-square";
 

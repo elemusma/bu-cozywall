@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+// import { usePathname } from "next/navigation";
 // import "@/app/styles/footer.scss";
 import "@/app/styles/social-icons.scss";
 import {
@@ -12,7 +12,7 @@ import SocialIcons from "@/app/components/socialIcons";
 import ButtonSquare from "@/app/components/buttons/btn-square";
 
 export default function Footer() {
-  const pathname = usePathname(); // Get the current route
+  // const pathname = usePathname(); // Get the current route
   return (
     <>
       <footer>

@@ -23,7 +23,7 @@ export async function POST(req: Request) {
 
     const body = await req.json();
     // console.log("Form submission received:", body);
-    const { user_name, user_email, user_phone, user_subject, message, embed_url, token,additional_info_1, operand_a, operand_b } = body;
+    const { user_name, user_email, user_phone, message, embed_url, token,additional_info_1, operand_a, operand_b } = body;
     const operandA = parseInt(operand_a, 10);
     const operandB = parseInt(operand_b, 10);
     const expected = operandA + operandB;

@@ -1,114 +1,14 @@
 "use client";
-import { Star } from "lucide-react";
 import Image from "next/image";
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import Logo from "../logo";
 
-// interface Review {
-//   author_name: string;
-//   rating: number;
-//   relative_time_description: string;
-//   text: { text: string; languageCode: string };
-//   profile_photo_url?: string;
-// }
-
-// interface RawGoogleReview {
-//   authorAttribution?: {
-//     displayName?: string;
-//     photoUri?: string;
-//   };
-//   rating: number;
-//   relativePublishTimeDescription: string;
-//   text: { text: string; languageCode: string };
-// }
-
-// interface GoogleReviewsProps {
-//   placeId: string;
-//   apiKey: string;
-//   maxReviews?: number;
-// }
 
 function GoogleReviews() {
-//   const [reviews, setReviews] = useState<Review[]>([]);
-//   const [expandedStates, setExpandedStates] = useState<{
-//     [key: number]: boolean;
-//   }>({});
-//   const [loading, setLoading] = useState(true);
-//   const [error, setError] = useState<string | null>(null);
-
-//   const toggleExpand = (index: number) => {
-//     setExpandedStates((prev) => ({
-//       ...prev,
-//       [index]: !prev[index],
-//     }));
-//   };
-
-//   useEffect(() => {
-//     const fetchReviews = async () => {
-//       try {
-//         console.log("Fetching Google Reviews...");
-//         const response = await fetch(
-//           `https://places.googleapis.com/v1/places/${placeId}?fields=reviews&key=${apiKey}`,
-//           {
-//             headers: {
-//               "Content-Type": "application/json",
-//               "X-Goog-Api-Key": apiKey,
-//               "X-Goog-FieldMask": "reviews",
-//             },
-//           }
-//         );
-
-//         if (!response.ok) {
-//           throw new Error(`HTTP error! Status: ${response.status}`);
-//         }
-
-//         const data = await response.json();
-//         console.log("Fetched data:", JSON.stringify(data, null, 2));
-
-//         if (data.reviews) {
-//           const formattedReviews = (
-//             maxReviews ? data.reviews.slice(0, maxReviews) : data.reviews
-//           ).map((review: RawGoogleReview) => ({
-//             author_name: review.authorAttribution?.displayName || "Anonymous",
-//             rating: review.rating,
-//             relative_time_description: review.relativePublishTimeDescription,
-//             text: review.text,
-//             profile_photo_url:
-//               review.authorAttribution?.photoUri || "/default-avatar.png",
-//           }));
-
-//           setReviews(formattedReviews);
-//         } else {
-//           throw new Error("No reviews found.");
-//         }
-//       } catch (err) {
-//         setError("Failed to load reviews. Please try again later.");
-//         console.error("Error fetching reviews:", err);
-//       } finally {
-//         setLoading(false);
-//       }
-//     };
-
-//     fetchReviews();
-//   }, [placeId, apiKey, maxReviews]);
-
-//   if (loading) {
-//     return (
-//       <div className="flex justify-center items-center min-h-[200px]">
-//         <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary"></div>
-//       </div>
-//     );
-//   }
-
-//   if (error) {
-//     return <div className="text-center text-red-500 p-4">{error}</div>;
-//   }
-
 const reviews = [
     {
         name:"Rachel M.",
@@ -143,7 +43,7 @@ const [expandedStates, setExpandedStates] = useState<{ [key: number]: boolean }>
 
 const prevRef = useRef<HTMLDivElement | null>(null);
   const nextRef = useRef<HTMLDivElement | null>(null);
-  const [navigationReady, setNavigationReady] = useState(false);
+  // const [navigationReady, setNavigationReady] = useState(false);
   
   return (
     <>
