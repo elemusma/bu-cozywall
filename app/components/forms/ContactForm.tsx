@@ -117,20 +117,6 @@ const ContactForm: React.FC = () => {
     }),
   });
 
-   console.log("Sending to HubSpot:", {
-  fields: [
-    { name: "firstname", value: data.user_name },
-    { name: "email", value: data.user_email },
-    { name: "phone", value: data.user_phone },
-    { name: "message", value: data.message },
-    { name: "jobtitle", value: data.job_title },
-  ],
-  context: {
-    pageUri: window.location.href,
-    pageName: document.title,
-  },
-});
-
         formRef.current.reset();
         // Redirect to thank-you page after success
         setIsDirty(false); // ✅ disable the beforeunload warning

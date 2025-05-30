@@ -93,8 +93,8 @@ if (!captchaData.success || captchaData.score < 0.5) {
 
 
     const mailOptions = {
-      from: `"Latino Web Studio" <${process.env.GMAIL_USER}>`,
-      to: "info@latinowebstudio.com",
+      from: `"BuildUp University" <${process.env.GMAIL_USER}>`,
+      to: "info@buildupuniversity.com",
       subject: `Contact: "${user_name}"`,
       html: `<table style="background-color: #f7f7f7; width: 100%;">
 <tbody>
