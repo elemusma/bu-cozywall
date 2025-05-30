@@ -1,0 +1,23 @@
+.sub-menu {
+    li {
+      border: transparent;
+      transition: all 0.5s ease-in-out;
+      border: 1px solid transparent;
+  
+      &:hover {
+        border-color: var(--neutral-dark);
+        background-color: #f9fafb; // Tailwind's `bg-gray-50`
+        a {
+            color:var(--neutral-dark);
+        }
+      }
+  
+      a {
+        display: block;
+        padding: 0.5rem 1rem;
+        line-height:1;
+        color: white;
+      }
+    }
+  }
+  

@@ -1,0 +1,26 @@
+select {
+  color: gray; // Default color before selection
+}
+  
+select:not(:has(option:checked[value=""])) {
+  color: black; // Color after a value is selected
+}
+  
+input,
+select,
+textarea {
+  padding:.75rem;
+  border-radius: .375rem;
+  border: 1px solid var(--neutral-dark);
+  transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+
+  &:focus {
+    border-color: var(--accent-primary);
+    outline: 2px solid var(--accent-primary); // Remove default browser outline
+    box-shadow: 0 0 4px var(--accent-primary); // Adds a glow effect
+  }
+}
+
+input[type="radio"] {
+  accent-color: var(--accent-primary); /* Change to your desired color */
+}

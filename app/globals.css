@@ -1,11 +1,53 @@
+@import url("https://use.typekit.net/pvj4rrm.css");
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --accent-primary:#1b3864;
+  --accent-secondary:#b0e1f3;
+  --accent-tertiary:#eeb463;
+  --neutral-dark:#252525;
+  --neutral-green:#2b322a;
+  --gray:#999999;
+  --gray-dark:#404040;
+  --gray-light:#cdcdcd;
+  --text-shadow: 1px 1px 3px rgba(0,0,0,.5);
 }
 
-@theme inline {
+html {
+  scroll-behavior: smooth;
+}
+
+/*** Works on common browsers ***/
+::selection {
+  background-color: var(--accent-primary);
+  color: #fff;
+}
+
+/*** Mozilla based browsers ***/
+::-moz-selection {
+  background-color: var(--accent-primary);
+  color: #fff;
+}
+
+/***For Other Browsers ***/
+::-o-selection {
+  background-color: var(--accent-primary);
+  color: #fff;
+}
+
+::-ms-selection {
+  background-color: var(--accent-primary);
+  color: #fff;
+}
+
+/*** For Webkit ***/
+::-webkit-selection {
+  background-color: var(--accent-primary);
+  color: #fff;
+}
+
+
+/* @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
@@ -17,10 +59,10 @@
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  /* background: var(--background);
+  color: var(--foreground); */
   font-family: Arial, Helvetica, sans-serif;
 }

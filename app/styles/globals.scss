@@ -1,0 +1,36 @@
+.box-shadow{
+    box-shadow: 0 0 3px 0 rgba(0,0,0,0.5);
+}
+.divider {
+    background-color: var(--accent-primary);
+    height: 5px;
+    width: 100%;
+    max-width: 700px;
+    margin: 5px auto;
+}
+.spacer {
+    height:75px;
+}
+.bg-light {
+    background:var(--gray-light);
+}
+.bg-gray-dark {
+    background:var(--gray-dark);
+}
+.bg-accent-primary {
+    background-color:var(--accent-primary);
+  }
+  
+  .bg-neutral-dark {
+    background:var(--neutral-dark);
+  }
+  .bg-neutral-green {
+    background:var(--neutral-green);
+  }
+
+.bg-fixed-custom {
+    background-attachment: fixed;
+}
+.grecaptcha-badge {
+    display: none !important;
+}

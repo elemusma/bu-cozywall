@@ -1,0 +1,58 @@
+p {
+    font-family: 'proxima_nova_altlight';
+}
+h1 {
+font-family: 'proxima_novaregular';
+letter-spacing:.2em;
+}
+
+.text-accent {
+    color: var(--accent-tertiary);
+}
+
+
+.minion-pro-italic {
+font-family: "minion-pro", serif;
+font-weight: 700;
+font-style: italic;
+}
+
+.font-aspira-black {
+    font-family: 'aspirablack';
+}
+.font-aspira-bold {
+    font-family: 'aspirabold';
+}
+.font-aspira-regular {
+    font-family: 'aspiraregular';
+}
+.font-aspira-light {
+    font-family: 'aspiralight';
+}
+.font-aspira-thin {
+    font-family: 'aspirathin';
+}
+.font-proxima-light {
+    font-family: 'proxima_nova_altlight';
+}
+.font-proxima-thin {
+    font-family: 'proxima_nova_altthin';
+}
+.font-proxima {
+    font-family: 'proxima_novaregular';
+}
+.font-proxima-bold {
+    font-family: 'proxima_novabold';
+}
+
+a.link-hover {
+	// color:var(--accent-secondary);
+	padding: 0px 5px;
+	box-shadow: inset 0 -5px 0 0 var(--accent-tertiary);
+    transition: all .25s ease-in-out;
+    text-decoration:none;
+}
+
+a.link-hover:hover{
+	box-shadow: inset 0 -55px 0 0 var(--accent-tertiary);
+}

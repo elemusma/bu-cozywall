@@ -1,0 +1,72 @@
+.tabs-container {
+    /* Tab content panels: when not active, make them non-interactive */
+    .content-area:not(.activate) {
+      bottom: 0;
+      pointer-events: none;
+      opacity: 0;
+      position: absolute;
+    }
+    
+    /* Active content panel styles */
+    .content-area.activate {
+      position: relative;
+      opacity: 1;
+    }
+  
+    /* Optionally, add a smooth transition for content panels */
+    .content-area {
+      transition: all 0.25s ease-in;
+    }
+  
+    /* Tab Titles */
+    .tab-title {
+      background: #dcdddf;
+      color: var(--accent-primary);
+      border-radius: 0;
+      border: none;
+      padding: 30px 40px;
+      font-weight: 700;
+      position: relative;
+      margin: 0;
+      text-align: center;
+      cursor: pointer;
+    }
+  
+    .tab-title.activeTabButtonClassName {
+      pointer-events: none;
+      background: var(--accent-primary);
+      color: white;
+    }
+  
+    @media only screen and (min-width: 768px) {
+      .tab-title:after {
+        content: "";
+        position: absolute;
+        width: 30%;
+        height: 3px;
+        background: white;
+        top: 50%;
+        right: -30%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+      }
+      .tab-title:before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 3px;
+        background: white;
+        top: 50%;
+        right: 0;
+        transform: translate(50%, -50%);
+        z-index: 1;
+      }
+    }
+  
+    /* Remove pseudo-elements for the last tab title if needed */
+    .tab-title:last-child:after,
+    .tab-title:last-child:before {
+      content: none;
+    }
+  }
+  

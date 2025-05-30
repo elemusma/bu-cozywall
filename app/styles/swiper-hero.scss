@@ -1,0 +1,46 @@
+.hero {
+  span.swiper-pagination-bullet:first-child {
+    position: relative;
+  }
+
+  span.swiper-pagination-bullet:after {
+    display: inline-block;
+    margin-top: 10px;
+    color: white;
+    font-weight:bold;
+    font-size:1.5rem;
+    text-shadow:var(--text-shadow);
+  }
+  .swiper-pagination-bullet-active {
+    background: var(--accent-primary) !important;
+}
+@media only screen and (min-width:641px) {
+  .swiper-pagination {bottom: 15% !important;}
+  }
+  span.swiper-pagination-bullet:first-child:after {
+    content: "RESIDENTIAL";
+  }
+  span.swiper-pagination-bullet:nth-child(2):after {
+    content: "COMMERCIAL";
+  }
+  span.swiper-pagination-bullet:last-child:after {
+    content: "INDUSTRIAL";
+  }
+  span.swiper-pagination-bullet {
+    opacity: 1;
+  }
+}
+// @keyframes kenburns {
+//     0% {
+//       transform: scale(1) translate(0, 0);
+//     }
+//     50% {
+//       transform: scale(1.1) translate(-5%, -5%);
+//     }
+//     100% {
+//       transform: scale(1) translate(0, 0);
+//     }
+//   }
+//   .kenburns {
+//     animation: kenburns 30s ease-in-out infinite;
+//   }
