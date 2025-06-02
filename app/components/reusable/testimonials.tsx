@@ -16,20 +16,20 @@ const reviews = [
         job_title:"Homeowner",
     },
     {
-        name:"Marcus T.",
-        body:"Professional, on time, and clean. Cozy Wall Foam insulated our retail space and we saw a noticeable difference in our energy usage right away. Highly recommend them for commercial work.",
-        job_title:"Store Owner",
-    },
+    name: "Tom R.",
+    body: "Cozy Wall Foam insulated our house and the difference was immediate. The drafts are gone and our heating system isn't working nearly as hard. Great team — clean, fast, and super professional.",
+    job_title: "Homeowner"
+},
     {
         name:"Lindsey P.",
         body:"From the free estimate to the final cleanup, Cozy Wall Foam exceeded our expectations. No mess, no hassle! just amazing results. Our older house now feels brand new.",
         job_title:"Renovation Client",
     },
-    {
-        name:"Erik S.",
-        body:"We manage several municipal buildings and Cozy Wall Foam helped us meet energy codes fast. Their team was responsive and efficient we will definitely be using them for future projects.",
-        job_title:"Facility Manager",
-    }
+{
+    name: "Danielle S.",
+    body: "We used Cozy Wall Foam for our family's older home. Their team was prompt, respectful, and made the whole place feel more solid and quiet. I'd recommend them to any homeowner.",
+    job_title: "Home Renovator"
+}
 ]
 
 const [expandedStates, setExpandedStates] = useState<{ [key: number]: boolean }>({});

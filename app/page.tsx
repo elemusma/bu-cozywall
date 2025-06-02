@@ -96,25 +96,7 @@ useEffect(() => {
     ),
     customTabButtonClassName: "lg:w-1/4 w-1/2",
     customTabButtonStyle: { fontSize: "1.2rem" },
-  },
-  {
-    title: "GOVERNMENT",
-    content: (
-      <div className="space-y-4">
-        <p>
-          Cozy Wall Foam Insulation is a trusted partner for government and municipal projects,
-          providing code-compliant insulation solutions for schools, offices, housing, and public
-          buildings.
-        </p>
-        <p>
-          Our team is experienced in meeting government standards and timelines while delivering
-          energy-efficient performance, indoor comfort, and long-term durability.
-        </p>
-      </div>
-    ),
-    customTabButtonClassName: "lg:w-1/4 w-full",
-    customTabButtonStyle: { fontSize: "1.2rem" },
-  },
+  }
 ];
 
 
