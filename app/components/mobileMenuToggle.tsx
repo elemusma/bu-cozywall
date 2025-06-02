@@ -79,7 +79,7 @@ const MobileMenuToggle = () => {
               href="#get-estimate" // Dynamic href
               onClick={handleClose}
             >
-              Free Estimate!
+              Book My Free Estimate
             </ButtonSquare>
             <div className="w-full lg:w-1/3 text-right flex justify-start">
               <SocialIcons />
@@ -154,7 +154,7 @@ const MobileMenuToggle = () => {
               href="#get-estimate" // Dynamic href
               onClick={handleClose}
             >
-              Free Estimate!
+              Book My Free Estimate
             </ButtonSquare>
 
             <div style={{ height: "25px" }}></div>

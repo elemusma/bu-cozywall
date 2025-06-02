@@ -217,7 +217,7 @@ useEffect(() => {
         whileInView="visible"
         viewport={{ once: true }}
       >
-    <Link href="#get-estimate" className="block clip-custom-shape my-2 uppercase font-proxima-bold italic">Get Free Estimate</Link>
+    <Link href="#get-estimate" className="block clip-custom-shape my-2 uppercase font-proxima-bold italic">Book My Free Estimate</Link>
       </motion.div>
     </div>
     <div className="md:w-6/12 w-full md:pt-0 pt-8 px-4">

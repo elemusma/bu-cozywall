@@ -29,7 +29,7 @@ export default function Footer() {
               id="" // Adding an ID
               href="#get-estimate" // Dynamic href
             >
-              Book Your Free Estimate
+              Book My Free Estimate
             </ButtonSquare>
             <Link
                 href={`tel:+1${Phone}`}

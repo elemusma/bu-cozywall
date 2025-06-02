@@ -114,7 +114,7 @@ export default function NavItems({ logoContainerClassName = "" }) {
               id="" // Adding an ID
               href="#get-estimate" // Dynamic href
             >
-              Book Your Free Estimate
+              Book My Free Estimate
             </ButtonSquare>
         </div>
       </div>
