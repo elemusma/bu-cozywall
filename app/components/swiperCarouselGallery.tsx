@@ -80,7 +80,7 @@ const SwiperCarouselGallery: React.FC<SwiperCarouselProps> = ({ slides }) => {
                   alt={slide.imageAlt || "Slide Image"}
                   width={300}
                   height={500}
-                  className="w-full lg:h-[200px] md:h-[300px] h-[350px] object-cover"
+                  className="w-full lg:h-[250px] md:h-[300px] h-[350px] object-cover"
                 />
               </div>
             </SwiperSlide>
