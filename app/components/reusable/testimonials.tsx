@@ -6,6 +6,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+import ButtonSquare from "@/app/components/buttons/btn-square";
 
 
 function GoogleReviews() {
@@ -57,10 +58,10 @@ const prevRef = useRef<HTMLDivElement | null>(null);
         <Image src="/photos/arrow-right-outline.png" alt="Next" width={40} height={40} />
       </div>
 
-    <div className="gap-2 px-4 pt-[35px] bg-[var(--accent-primary)]">
-        <div className="max-w-screen-lg mx-auto py-3 px-4">
+    <div className="gap-2 px-4 pt-[35px] pb-[35px] bg-[var(--accent-primary)]">
+        <div className="max-w-screen-lg mx-auto px-4">
   <div className="flex flex-wrap relative">
-    <div className="w-full px-4">
+    <div className="w-full">
 <h2 className="text-white text-4xl font-proxima-light text-center">TESTIMONIALS</h2>
     </div>
       <div className="w-full">
@@ -118,6 +119,17 @@ const prevRef = useRef<HTMLDivElement | null>(null);
 
         </Swiper>
       </div>
+    </div>
+    <div className="w-full text-center">
+      <ButtonSquare
+              className="" // Adding additional class
+              style={{ }} // Adding inline style
+              id="" // Adding an ID
+              href="https://g.page/r/CXd4pXblTJcPEBM/review" // Dynamic href
+              target="_blank" // Open in new tab
+            >
+              Leave a Review
+            </ButtonSquare>
     </div>
 
     </div>
