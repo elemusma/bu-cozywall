@@ -5,7 +5,7 @@ interface ButtonSquareProps {
   style?: React.CSSProperties; // For additional inline styles
   id?: string; // For setting an ID
   href: string; // For dynamic href value
-  target: string; // For dynamic href value
+  target?: string; // For dynamic href value
   children?: React.ReactNode; // For dynamic content inside the button
   onClick?: (event: React.MouseEvent<HTMLAnchorElement>) => void; // Add onClick prop
 }
