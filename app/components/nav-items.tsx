@@ -113,6 +113,7 @@ export default function NavItems({ logoContainerClassName = "" }) {
               style={{ }} // Adding inline style
               id="" // Adding an ID
               href="#get-estimate" // Dynamic href
+              target="_self" // Open in same tab
             >
               Book My Free Estimate
             </ButtonSquare>

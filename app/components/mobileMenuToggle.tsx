@@ -78,6 +78,7 @@ const MobileMenuToggle = () => {
               id="" // Adding an ID
               href="#get-estimate" // Dynamic href
               onClick={handleClose}
+              target="_self" // Open in same tab
             >
               Book My Free Estimate
             </ButtonSquare>
@@ -153,6 +154,7 @@ const MobileMenuToggle = () => {
               id="" // Adding an ID
               href="#get-estimate" // Dynamic href
               onClick={handleClose}
+              target="_self" // Open in same tab
             >
               Book My Free Estimate
             </ButtonSquare>

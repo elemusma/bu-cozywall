@@ -100,6 +100,7 @@ export default function Navigation() {
                   }} // Adding inline style
                   id="" // Adding an ID
                   href="/#get-estimate" // Dynamic href
+                  target="_self" // Open in same tab
                 >
                   <div className="px-2">
                     <svg
