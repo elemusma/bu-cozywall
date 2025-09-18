@@ -5,7 +5,7 @@ import Link from "next/link";
 // import "@/app/styles/footer.scss";
 import "@/app/styles/social-icons.scss";
 import {
-  Phone,
+  Phone, Address
 } from "./globals.js";
 import Logo from "./logo";
 import SocialIcons from "@/app/components/socialIcons";
@@ -39,8 +39,9 @@ export default function Footer() {
               >
                 {Phone} 
               </Link>
-              <p><strong>Copyright &copy; {new Date().getFullYear()} Cozy Wall Foam Insulation, LLC - All Rights Reserved.</strong></p>
+              <p><strong>{Address}</strong></p>
               <SocialIcons />
+              <p className="pt-4"><strong>Copyright &copy; {new Date().getFullYear()} Cozy Wall Foam Insulation, LLC - All Rights Reserved.</strong></p>
             </div>
           </div>
         </div>
