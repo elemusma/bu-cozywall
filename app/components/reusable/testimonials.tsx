@@ -12,6 +12,21 @@ import ButtonSquare from "@/app/components/buttons/btn-square";
 function GoogleReviews() {
 const reviews = [
     {
+        name:"Robert McAllister",
+        body:"Zack, and his team of professionals were outstanding. Great customer service with full awareness of every aspect of the project communicated well throughout. The foam installed gave us a 40% reduction in the blower door CFM test! Clean, organized and efficient, the team left my home exactly the way it was before they showed up, but now it is more efficient and quiet! Thank you!",
+        job_title:"",
+    },
+    {
+        name:"Dawn Coker",
+        body:"WELL worth the read! Customer service ? This company is right on point! From Zack and Amy to the rest of their team, wow! Until I found this company, I had an awful and long time getting one to return my calls or come out for an estimate. I saw an ad, left a message on a Sunday, they came out the next day! Before Erik left he gave me an estimate for the walls from (Cozy Walls Insulation.) They were out here the following week to complete the job! I have HORRIBLE allergies that can cause my eyes to swell shut to causing vertigo. I was concerned that the smell of foam spray would be an issue. Amy, Cozy Walls said they would come out to try a wall to see how it went. If it was ok, complete the job, if not, we would figure something out. To me this is a company that truly cares about their customers! They went above and beyond from start to finish. I would recommend them to anyone!",
+        job_title:"",
+    },
+    {
+        name:"James Leonard",
+        body:"Amy and Zach, thank you for being so easy to work with and how well your company does business. It was a pleasure working with you. You Zach and all your employees were great..I was very impressed with wow they handled this project. Our home feels so much more comfortable now that it's getting colder, warmer, alot quieter and the furnace doesn't run as much, thank you..feel free to use this review on your website",
+        job_title:"",
+    },
+    {
         name:"Rachel M.",
         body:"We were tired of cold drafts and high heating bills. Cozy Wall Foam came out, explained everything clearly, and had the job done in a day. Our home feels warmer, quieter, and much more comfortable!",
         job_title:"Homeowner",
